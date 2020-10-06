@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post } from '@nestjs/common';
 import { Task } from './task.model';
 import { TasksService } from './tasks.service';
 
@@ -10,4 +10,5 @@ export class TasksController {
     getAllTasks(): Task[]{
         return this.tasksService.getAllTasks();
     }
+
 }
